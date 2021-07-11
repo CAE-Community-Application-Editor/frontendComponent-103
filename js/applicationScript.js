@@ -44,7 +44,7 @@ var init = function() {
  
   console.log("test"); 
  
-  document.getElementById("")
+  document.getElementById("button_efc9d").innerText = "Hallo";
 
 
 }
