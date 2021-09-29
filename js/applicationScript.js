@@ -37,8 +37,8 @@ var init = function() {
   var iwcCallback = function(intent) {
     // define your reactions on incoming iwc events here 
     console.log(intent);
-    if (intent.action == "test") {
-       func(intent.data);
+    if (intent.action == "testIntent") {
+       f2(intent.data);
     }
   };
 
@@ -56,8 +56,8 @@ var initClient = function(y) {
   console.log("Client initialized");
 };
 
-// func
-var func = function(contentOfIntent){
+// f2
+var f2 = function(contentOfIntent){
 
 //start variable declaration
    var re = null;
@@ -65,11 +65,24 @@ var func = function(contentOfIntent){
 //end variable declaration
 
 
-  var content = "initialized";
-  client.sendIntent("test",content,true);
-
   //Additional own javascript
  return re;
+}
+
+// f1
+var f1 = function(){
+
+//start variable declaration
+   var n = null;
+
+//end variable declaration
+
+
+  var content = "initialized";
+  client.sendIntent("testIntent",content,true);
+
+  //Additional own javascript
+ return n;
 }
 
 
