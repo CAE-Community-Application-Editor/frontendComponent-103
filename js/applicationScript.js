@@ -65,6 +65,9 @@ var func = function(contentOfIntent){
 //end variable declaration
 
 
+  var content = "initialized";
+  client.sendIntent("test",content,true);
+
   //Additional own javascript
  return re;
 }
