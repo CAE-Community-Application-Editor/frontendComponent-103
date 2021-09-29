@@ -87,5 +87,6 @@ var f1 = function(){
 
 
 $(document).ready(function() {
-  init();
+  init(); 
+  f1();
 });
