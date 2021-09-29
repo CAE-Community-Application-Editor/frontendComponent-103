@@ -37,7 +37,9 @@ var init = function() {
   var iwcCallback = function(intent) {
     // define your reactions on incoming iwc events here 
     console.log(intent);
-
+    if (intent.action == "test") {
+       func(intent.data);
+    }
   };
 
   client = new Las2peerWidgetLibrary("$Microservice_Url$/", iwcCallback, '*');
@@ -53,6 +55,19 @@ var initClient = function(y) {
   this.client = new Las2peerWidgetLibrary("", iwcCallback, "127.0.0.1:8073", y);
   console.log("Client initialized");
 };
+
+// func
+var func = function(contentOfIntent){
+
+//start variable declaration
+   var re = null;
+
+//end variable declaration
+
+
+  //Additional own javascript
+ return re;
+}
 
 
 $(document).ready(function() {
