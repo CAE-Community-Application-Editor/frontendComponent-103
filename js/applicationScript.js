@@ -38,7 +38,8 @@ var init = function() {
     // define your reactions on incoming iwc events here 
     console.log(intent);
     if (intent.action == "testIntent") {
-       f2(intent.data);
+       f2(intent.data); 
+console.log("received intent");
     }
   };
 
