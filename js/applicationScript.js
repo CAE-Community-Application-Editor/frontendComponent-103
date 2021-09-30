@@ -65,6 +65,14 @@ var f2 = function(contentOfIntent){
 
 //end variable declaration
 
+   var contentExample = null;
+  client.sendRequest("GET", pathExample, contentExample, "text/plain", {}, false,
+  function(data, type) {
+    console.log(data);
+  },
+  function(error) {
+    console.log(error);
+  });
 
   //Additional own javascript
  return re;
